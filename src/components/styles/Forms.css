@@ -70,4 +70,9 @@ input.active {
     
 }
 
-
+@media screen and (max-width: 600px) {
+    .container {
+        width: 75%;
+        font-size: .5rem;
+        
+    }
