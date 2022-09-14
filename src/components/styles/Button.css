@@ -21,7 +21,6 @@
     font-size: 1.3rem;
     border: 2px solid white;
     text-align: center;
-    
     display: inline-block;
     cursor: pointer;
 }
@@ -60,7 +59,6 @@
     }
   }
 
-  
   @media screen and (max-width: 900px) {
     .btn {
       background: transparent;
@@ -74,5 +72,12 @@
 
     .btn span {
       display: none;
+    }
+  }
+
+  @media screen and (max-width: 750px) {
+    .btn-blue {
+      width: 90%;
+      font-size: 1rem;
     }
   }

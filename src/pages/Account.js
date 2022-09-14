@@ -25,7 +25,7 @@ const Account = () => {
       <p style={{textAlign: "center"}}>user</p>
       <p style={{textAlign: "center", fontWeight: "bold"}}>{user && user.email}</p>
       <p style={{textAlign: "right"}}><Link to='/terms' style={{fontWeight: "bold", textDecoration: "none"}}>TERMS <IoIosArrowForward/></Link></p>
-      <button onClick={handleLogout} className='btn'>SIGN OUT</button>
+      <button className='btn-bck' onClick={handleLogout}>SIGN OUT</button>
     </div>
 
 

@@ -17,16 +17,27 @@
     .navbar-logo {
       color: var(--txtWhite);
       text-decoration: none;
-      font-size: 1.3rem;
+      font-size: 1rem;
       display: flex;
       align-items: center;
-      width: 9rem;
+      width: 10rem;
       justify-content: space-between;
     }
   
     .navbar-logo:hover {
       color: var(--txtGreen);
     }
+
+    .logo-icon {
+      flex: 30%;
+      display: grid;
+      place-items: left;
+    }
+
+    .logo-p {
+      flex: 70%;
+    }
+
     .navbar-user {
       color: yellow;
       margin-right: 2rem;
@@ -153,7 +164,7 @@
     @media screen and (max-width: 1520px) {
       .navbar-logo {
         font-size: 1rem;
-        width: 7rem;
+      
       }
       .nav-items {
         width: 65vw;
@@ -177,7 +188,7 @@
     @media screen and (max-width: 1300px) {
       .navbar-logo {
         font-size: .9rem;
-        width: 6rem;
+       
       }
       .nav-items {
         width: 60vw;

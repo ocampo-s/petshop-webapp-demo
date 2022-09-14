@@ -37,8 +37,8 @@ function Navbar() {
     <>
       <nav className="navbar">
         <Link to="/" className="navbar-logo" onClick={() => setSidebar(false)}>
-          <Icons.FaSpider/>
-            Petshop Web
+          <Icons.FaSpider className='logo-icon'/>
+          <p className='logo-p'>Petshop Web</p>
         </Link>
         {!mobile && (
           <ul className="nav-items">
