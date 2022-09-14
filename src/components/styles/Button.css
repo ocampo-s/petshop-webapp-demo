@@ -1,0 +1,78 @@
+.btn {
+    background: #E8EAF7;
+    border: none;
+    border-radius: 20px;
+    padding: 6px 16px;
+    margin-left: 0.75rem;
+    font-size: .8rem;
+    cursor: pointer;
+    transition: 0.3s all ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+  }
+  .btn-blue {
+    background-color: #1260d4; /* Green */
+    width: 94%;
+    padding: .5rem .8rem .5rem .8rem;
+    margin: 0 1rem 1rem 1.5rem;
+    color: white;
+    font-size: 1.3rem;
+    border: 2px solid white;
+    text-align: center;
+    
+    display: inline-block;
+    cursor: pointer;
+}
+.btn-bck {
+  background-color: #5B7791;
+  font-size: 1.3rem;
+  color: white;
+  cursor: pointer;
+  border: 1px solid;
+}
+  
+  .btn:hover {
+    background: #474A66;
+    color: #00D6BB;
+  }
+
+  .btn-blue:hover {
+    background-color: #6DADF2;
+    color: rgb(40, 40, 40);
+    border: 2px solid black;
+  }
+
+  .btn-bck:hover {
+    background-color: #DDEDF5;
+    color: #474A66;
+    
+  }
+  
+  .btn span {
+    margin-left: 0.7rem;
+  }
+  @media screen and (max-width: 1350px) {
+    .btn {
+     font-size: .8rem;
+     padding: 3px 8px;
+    }
+  }
+
+  
+  @media screen and (max-width: 900px) {
+    .btn {
+      background: transparent;
+      color: #E8EAF7;
+    }
+    
+    .btn:hover {
+      background: transparent;
+      color: #00D6BB;
+    }
+
+    .btn span {
+      display: none;
+    }
+  }

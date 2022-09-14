@@ -1,0 +1,24 @@
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+thead{
+    border:1px #8DAEC8;
+    background-color: #A1BFD2;
+    text-align: left;
+    padding: 8px;
+}
+
+.document:nth-child(even){
+    background-color: #DDEDF5;
+}
+.document:hover{
+    background-color: #8DAEC8;
+}
+
+@media screen and (max-width: 900px) {
+    table {
+      font-size: .8rem;
+    }
+  }

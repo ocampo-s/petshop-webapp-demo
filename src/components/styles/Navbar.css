@@ -1,0 +1,219 @@
+:root{
+    --bgColor: #253649;
+    --bgGreenDark: #5763aa;
+    --txtGreen: #00D6BB;
+    --txtWhite: #F5F5F5;
+  }
+  
+  .navbar {
+      height: 10vh;
+      background: var(--bgColor);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* position: relative; */
+    }
+    
+    .navbar-logo {
+      color: var(--txtWhite);
+      text-decoration: none;
+      font-size: 1.3rem;
+      display: flex;
+      align-items: center;
+      width: 9rem;
+      justify-content: space-between;
+    }
+  
+    .navbar-logo:hover {
+      color: var(--txtGreen);
+    }
+    .navbar-user {
+      color: yellow;
+      margin-right: 2rem;
+    }
+  
+    .nav-items {
+      width: 65vw;
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 2rem;
+    }
+    
+    .nav-item {
+      list-style: none;
+      margin-left: 2rem;
+    }
+  
+    .nav-item a {
+      text-decoration: none;
+      color: var(--txtWhite);
+      font-size: 1.2rem;
+      padding: 6px 16px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      border-radius: 0px;
+      transition: 0.2s all ease-out;
+    }
+  
+    .nav-item a:hover {
+      
+      color: var(--txtGreen);
+    }
+    
+    .nav-item a span {
+      margin-left: 0.7rem;
+      font-size: 1.3rem;
+    }
+  
+    .sidebar-toggle {
+      width: 65vw;
+      display: flex;
+      justify-content: flex-end;
+    }
+    
+    .sidebar-toggle-logo {
+      font-size: 1.3rem;
+      color: var(--txtWhite);
+      cursor: pointer;
+    }
+    
+    .sidebar {
+      width: 14rem;
+      background: var(--bgColor);
+      height: 90vh;
+      position: absolute;
+      top: 10vh;
+      left: -100%;
+      transition: 0.3s all ease-in-out;
+    }
+    
+    .sidebar.active {
+      left: 0;
+    }
+    
+    .sidebar-items {
+      font-size: 1.2rem;
+      display: flex;
+      flex-direction: column;
+      transition: 0.2s all ease-out;
+    }
+  
+    .sidebar-items #icon {
+      flex: 30%;
+      display: grid;
+      place-items: left;
+    }
+    
+    .sidebar-items #title {
+      flex: 70%;
+    }
+    
+    .sidebar-item {
+      list-style: none;
+      margin-top: 1rem;
+      width: 100%;
+      height: 3rem;
+    }
+    
+    .sidebar-item a {
+      text-decoration: none;
+      color: var(--txtWhite);
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.2s all ease-out;
+    }
+  
+    .sidebar-user{
+      color: yellow;
+      margin-right: 2rem;
+    }
+    
+    .sidebar-item a span {
+      margin-left: 1.5rem;
+      font-size: 1.4rem;
+    }
+    
+    .sidebar-item a:hover {
+      
+      color: var(--txtGreen);
+    }
+    
+    .sidebar .btn {
+      margin-top: 2.4rem;
+      margin-left: 1.2rem;
+      width: 80%;
+    }
+  
+    @media screen and (max-width: 1520px) {
+      .navbar-logo {
+        font-size: 1rem;
+        width: 7rem;
+      }
+      .nav-items {
+        width: 65vw;
+        margin-right: 1.2rem;
+      }
+      .nav-item a {
+        font-size: 1rem;
+      }
+      .nav-item a span {
+        font-size: 1rem;
+      }
+      .navbar-user {
+        margin-right: 1rem;
+      }
+      .btn {
+       font-size: .8rem;
+       padding: 3px 8px;
+      }
+    }
+  
+    @media screen and (max-width: 1300px) {
+      .navbar-logo {
+        font-size: .9rem;
+        width: 6rem;
+      }
+      .nav-items {
+        width: 60vw;
+        margin-right: 1rem;
+      }
+      .nav-item a {
+        font-size: .9rem;
+      }
+      .nav-item a span {
+        font-size: .9rem;
+      }
+      .navbar-user {
+        margin-right: .9rem;
+      }
+      .btn {
+       font-size: .8rem;
+       padding: 3px 8px;
+      }
+    }
+    
+    @media screen and (max-width: 900px) {
+      .sidebar.active {
+        width: 5rem;
+      }
+    
+      .sidebar-items #title {
+        display: none;
+      }
+    }
+  
+    @media screen and (max-width: 450px) {
+      .sidebar-user {
+        display: none;
+      }
+    
+      .sidebar-items #title {
+        display: none;
+      }
+    }
