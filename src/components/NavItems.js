@@ -25,12 +25,12 @@ export const navItems = [
      sName: "sidebar-item",
      icon: <Icons.FaInfoCircle />,
   },
-  {
-    id: 4,
-    title: "Account",
-    path: "./account",
-    nName: "nav-item",
-    sName: "sidebar-item",
-    icon: <Icons.FaUser />,
-  },
+  // {
+  //   id: 4,
+  //   title: "Account",
+  //   path: "./account",
+  //   nName: "nav-item",
+  //   sName: "sidebar-item",
+  //   icon: <Icons.FaUser />,
+  // },
 ];

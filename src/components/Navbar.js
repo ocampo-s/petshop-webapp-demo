@@ -54,12 +54,12 @@ function Navbar() {
             })}
           </ul>
         )}
-        {!mobile && <typography className="navbar-user">{user && user.email}</typography>}
+        {!mobile && <Link to="/account" className="navbar-user"><Icons.FaUser /> {user && user.email}</Link>}
         {!mobile && <Button />}
 
         {mobile && (
           <div className="sidebar-toggle">
-            <typography className="sidebar-user">{user && user.email}</typography>
+            <Link to="/account" className="navbar-user"><Icons.FaUser /> {user && user.email}</Link>
             {sidebar ? (
               <Icons.FaTimes
                 className="sidebar-toggle-logo"
