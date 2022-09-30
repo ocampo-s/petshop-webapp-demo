@@ -4,4 +4,5 @@ So far, with the app a common visitor can register as a user, login, and read th
 
 Now I want to elaborate further and get the user to place an order and the admin to view the orders.
 
-I built the app from scratch. I began in April this year (2022) knowing very little about React, after taking only one course in the fall of 2021, and nothing about Firebase. I based the original version on my final assignment (Aug 2022) that I built to finish my degree as full stack developer at [Careeria](https://careeria.fi/) (FIN).
+----
+This is a public version of the one I submitted as part of a final assignment I built to finish my degree as a full stack developer at [Careeria](https://careeria.fi/) (Sept 2022).
